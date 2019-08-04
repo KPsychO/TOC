@@ -1,0 +1,93 @@
+#salida del oscilador a 100MHz
+#
+NET clk LOC=T9;
+#
+
+	#switches placa superior
+
+NET SWPlacaSuperior<3> LOC=K4;
+NET SWPlacaSuperior<2> LOC=K3;
+NET SWPlacaSuperior<1> LOC=K2;
+NET SWPlacaSuperior<0> LOC=J4;
+
+	#switches placa extendida
+
+NET modo LOC=P12;
+#NET SW<6> LOC=J1;
+#NET SW<5> LOC=H1;
+#NET SW<4> LOC=H3;
+NET SWPlacaExtendida<3> LOC=G2;
+NET SWPlacaExtendida<2> LOC=K15;
+NET SWPlacaExtendida<1> LOC=K16;
+NET SWPlacaExtendida<0> LOC=F15;
+
+#
+	#push buttons placa superior
+NET siguiente LOC=E11; 
+NET rst_n LOC=A13; 
+
+	# Push button placa extendida
+#NET pushb1 LOC=H4;
+#NET pushb2 LOC=L5;
+#NET pushb3 LOC=N2;
+#NET pushb4 LOC=M3;
+
+
+#barra de leds placa extendida
+
+#NET leds<0> LOC=L5;
+#NET leds<1> LOC=N2;
+#NET leds<2> LOC=M3;
+#NET leds<3> LOC=N1;
+#NET leds<5> LOC=T13;
+#NET leds<6> LOC=L15;
+#NET leds<7> LOC=J13;
+#NET leds<8> LOC=H15;
+#NET leds<9> LOC=J16;
+#NET leds<10> LOC=J14;
+
+ 
+
+#Display 7-segmentos 
+#
+#		   S0
+#		   ---
+#	    S5	|	|s1
+#		    S6
+#		   ---
+#	    S4	|	|S2
+#
+#		   ---
+#		   S3
+
+
+#Display 7-segmentos de la placa superior
+
+NET displayS<0> loc=R10;
+NET displayS<1> loc=P10;
+NET displayS<2> loc=M11;
+NET displayS<3> loc=M6;
+NET displayS<4> loc=N6;
+NET displayS<5> loc=T7;
+NET displayS<6> loc=R7;
+
+#Display 7-segmentos de la parte izquierda de la placa extendida:
+
+NET displayI<0> LOC=H14;
+NET displayI<1> LOC=M4;
+NET displayI<2> LOC=P1;
+NET displayI<3> LOC=N3;
+NET displayI<4> LOC=M15;
+NET displayI<5> LOC=H13;
+NET displayI<6> LOC=G16;
+
+
+#Display 7-segmentos de la parte derecha de la placa extendida
+
+NET displayD<0> loc=E2;
+NET displayD<1> loc=E1;
+NET displayD<2> loc=F3;
+NET displayD<3> loc=F2;
+NET displayD<4> loc=G4;
+NET displayD<5> loc=G3;
+NET displayD<6> loc=G1;
